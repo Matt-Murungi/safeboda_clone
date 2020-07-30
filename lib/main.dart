@@ -26,16 +26,27 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
      body: SingleChildScrollView(
-       child: Column(
-         children: <Widget>[
-           Container(
-             height: MediaQuery.of(context).size.height/2,
-             decoration: BoxDecoration(
-               color: Colors.orange[500],
-             ),
-           )
-         ],
-       ),
+   child: Column(
+     children: <Widget>[
+       Container(
+         height: MediaQuery.of(context).size.height/2,
+         width: MediaQuery.of(context).size.width,
+         decoration: BoxDecoration(
+           color: Colors.orange[500],
+         ),
+         child: Container(
+           child: Column(
+             children: <Widget>[
+               Padding(
+                 padding: const EdgeInsets.symmetric(vertical: 30),
+                 child: Text("What do you need?", style: TextStyle(color: Colors.white, fontSize: 25, fontWeight: FontWeight.w600),),
+               )
+             ],
+           ),
+         ),
+       )
+     ],
+   ),
      ),
     );
   }
