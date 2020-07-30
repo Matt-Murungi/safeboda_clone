@@ -25,21 +25,18 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-      children: <Widget>[
-        Container(
-          height: MediaQuery.of(context).size.height/2,
-          decoration: BoxDecoration(
-            color: Colors.orange[500]
-          ),
-          child: Stack(
-children: <Widget>[
- 
-],
-          ),
-        )
-      ],
-      ),
+     body: SingleChildScrollView(
+       child: Column(
+         children: <Widget>[
+           Container(
+             height: MediaQuery.of(context).size.height/2,
+             decoration: BoxDecoration(
+               color: Colors.orange[500],
+             ),
+           )
+         ],
+       ),
+     ),
     );
   }
 }
