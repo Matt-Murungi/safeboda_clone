@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:safeboda/constants/styles.dart';
 import 'package:safeboda/widgets/card_icon.dart';
 
 class MainOptions extends StatelessWidget {
@@ -11,9 +12,7 @@ class MainOptions extends StatelessWidget {
         children: <Widget>[
           Text(
             "What do you need?",
-            style: TextStyle(
-                color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold),
-          ),
+            style: kHeading,),
           SizedBox(
             height: 20,
           ),

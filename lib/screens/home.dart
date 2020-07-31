@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:safeboda/components/home_component.dart';
+import 'package:safeboda/constants/styles.dart';
 
 class MyHomePage extends StatefulWidget {
   @override
@@ -11,11 +12,11 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    return Scaffold(
-      backgroundColor: Colors.orange[700],
+    var scaffold = Scaffold(
+      backgroundColor: kMainColour,
       body: HomeComponent(size: size),
       bottomNavigationBar: BottomNavigationBar(
-        selectedItemColor: Colors.orange[700],
+        selectedItemColor: kMainColour,
         currentIndex: 1,
         items: [
     
@@ -24,5 +25,6 @@ class _MyHomePageState extends State<MyHomePage> {
           BottomNavigationBarItem(icon: Icon(Icons.person), title: Text("My Account")),
       ]),
     );
+    return scaffold;
   }
 }

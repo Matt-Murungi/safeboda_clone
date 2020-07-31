@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:safeboda/constants/styles.dart';
 
 class IconOption extends StatelessWidget {
   final String label;
@@ -14,7 +15,7 @@ class IconOption extends StatelessWidget {
           buildIcon(icon),
           Text(
             label,
-            style: TextStyle(color: Colors.orange[500]),
+            style: TextStyle(color: kMainColour),
           )
         ],
       ),
@@ -24,7 +25,7 @@ class IconOption extends StatelessWidget {
   Icon buildIcon(IconData icon) {
     return Icon(
       icon,
-      color: Colors.orange[500],
+      color: kMainColour,
       size: 30,
     );
   }

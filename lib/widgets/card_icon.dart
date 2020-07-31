@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:safeboda/constants/styles.dart';
 
 class CardIcon extends StatelessWidget {
   final IconData icon;
@@ -37,7 +38,7 @@ class CardIcon extends StatelessWidget {
     return Icon(
       icon,
       size: 100,
-      color: Colors.orange[500],
+      color: kMainColour,
     );
   }
 }

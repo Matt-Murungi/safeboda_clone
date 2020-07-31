@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:safeboda/constants/styles.dart';
 
 class BalanceComponent extends StatelessWidget {
   @override
@@ -19,7 +20,7 @@ class BalanceComponent extends StatelessWidget {
             "Wallet",
             style: TextStyle(color: Colors.white, fontSize: 18),
           ),
-          Text("UGX 9,560", style: TextStyle(color: Color.fromRGBO(58, 139, 103, 1), fontSize: 18,fontWeight: FontWeight.w500),),
+          Text("UGX 9,560", style: TextStyle(color: kBalanceColor, fontSize: 18,fontWeight: FontWeight.w500),),
         ],
       ),
     );
