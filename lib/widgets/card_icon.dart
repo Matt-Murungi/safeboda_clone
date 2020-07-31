@@ -1,10 +1,16 @@
 import 'package:flutter/material.dart';
 
-
 class CardIcon extends StatelessWidget {
+  final IconData icon;
+  final String label;
+
+  CardIcon({this.icon, this.label});
   @override
   Widget build(BuildContext context) {
     return Card(
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(13),
+      ),
       child: Container(
           height: MediaQuery.of(context).size.height / 4.7,
           width: MediaQuery.of(context).size.width / 2.4,
@@ -14,13 +20,9 @@ class CardIcon extends StatelessWidget {
               SizedBox(
                 height: 10,
               ),
-              Icon(
-                Icons.fastfood,
-                size: 100,
-                color: Colors.orange[500],
-              ),
+              buildIcon(icon),
               Text(
-                "Food & Shop",
+                label,
                 style: TextStyle(
                     color: Colors.blue[900],
                     fontSize: 16,
@@ -28,6 +30,14 @@ class CardIcon extends StatelessWidget {
               )
             ],
           )),
+    );
+  }
+
+  Icon buildIcon(IconData icon) {
+    return Icon(
+      icon,
+      size: 100,
+      color: Colors.orange[500],
     );
   }
 }
