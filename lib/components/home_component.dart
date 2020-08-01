@@ -4,14 +4,12 @@ import 'package:safeboda/components/main_options.dart';
 
 
 class HomeComponent extends StatelessWidget {
-  const HomeComponent({
-    @required this.size,
-  });
-
-  final Size size;
+  
 
   @override
   Widget build(BuildContext context) {
+        Size size = MediaQuery.of(context).size;
+
     return SingleChildScrollView(
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,

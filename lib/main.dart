@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:safeboda/screens/home.dart';
-import 'package:safeboda/screens/my_account.dart';
 
 void main() {
   runApp(MyApp());
@@ -15,7 +14,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyAccount(),
+      home: MyHomePage(),
     );
   }
 }

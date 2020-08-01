@@ -6,22 +6,22 @@ class MyAccount extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     const double marginLength = 15;
-    return Scaffold(
-      body: Padding(
-        padding: const EdgeInsets.only(top: 40),
-      
-        child: Container(
-          margin: EdgeInsets.symmetric(horizontal: marginLength),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
-              Padding(
-                padding: const EdgeInsets.only(bottom: 30),
-                child: Text("My Account", style: TextStyle(color: Colors.blue[900], fontSize: 25, fontWeight: FontWeight.bold),),
-              ),
-              Card(
-                child: ListTile(
-                  title: Text("Murungi Matthew", style: TextStyle(color:Colors.blue[900], fontSize: 18, fontWeight: FontWeight.w600 ),),
+                return Scaffold(
+                  body: Padding(
+                    padding: const EdgeInsets.only(top: 40),
+                  
+                    child: Container(
+                      margin: EdgeInsets.symmetric(horizontal: marginLength),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          Padding(
+                            padding: const EdgeInsets.only(bottom: 30),
+                            child: Text("My Account", style: kAccountHeadingtextStyle,),
+                  ),
+                  Card(
+                    child: ListTile(
+                      title: Text("Murungi Matthew", style: kListTitletextStyle,),
                   subtitle: Text("+256787509953"),
                   leading: CircleAvatar(
                     backgroundColor: kMainColour,
@@ -42,16 +42,16 @@ class MyAccount extends StatelessWidget {
                       icon: Icons.message,
                     ),
                     AccountListTile(
-                      label: "Communications",
-                      icon: Icons.message,
+                      label: "Payment methods",
+                      icon: Icons.payment,
                     ),
                     AccountListTile(
-                      label: "Communications",
-                      icon: Icons.message,
+                      label: "Help",
+                      icon: Icons.help_outline,
                     ),
                     AccountListTile(
-                      label: "Communications",
-                      icon: Icons.message,
+                      label: "About",
+                      icon: Icons.info_outline,
                     )
                   ],
                 ),
